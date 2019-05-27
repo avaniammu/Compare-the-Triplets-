@@ -1,0 +1,28 @@
+vector<int> compareTriplets(vector<int> a, vector<int> b) 
+{
+    int al=0,bo=0;
+ int n =a.size();
+int i,j;
+for(i=0;i<n;i++)
+{
+    if(a[i]>b[i])
+    {
+      al =al+1;
+    }
+   if(a[i]<b[i])
+    {
+        bo= bo+1;
+
+    }
+   if(a[i]==b[i])
+    {
+        al= al+0;
+        bo =bo+0;
+    }
+}
+
+vector<int> r;
+r.push_back(al);
+r.push_back(bo);
+return r;
+}
